@@ -6,41 +6,34 @@
   --font-cairo: 'Cairo', sans-serif;
   --font-playfair: 'Playfair Display', serif;
   
-  /* Core Brand */
   --color-primary: #1F3A5F;
   --color-primary-hover: #162C47;
   --color-primary-active: #0F1F33;
   --color-primary-text: #FFFFFF;
 
-  /* Success / Olive */
   --color-success: #6B8E23;
   --color-success-bg: #E6F0D6;
   --color-success-text: #3E5A14;
 
-  /* Backgrounds - Light Mode */
   --color-bg-main: #FFFFFF;
   --color-bg-section: #F5E9DA;
   --color-bg-card: #FFFFFF;
   --color-border: #E5E5E5;
 
-  /* Accent / Terracotta */
   --color-accent: #C96A3D;
   --color-accent-hover: #A9552F;
   --color-accent-bg: #F3D2C2;
 
-  /* Text */
   --color-text-primary: #1A1A1A;
   --color-text-secondary: #6B6B6B;
   --color-text-on-primary: #FFFFFF;
 
-  /* System States */
   --color-error: #D64545;
   --color-error-bg: #FBEAEA;
   --color-warning: #E6A23C;
   --color-warning-bg: #FFF4E5;
 }
 
-/* Dark Mode */
 [data-theme="dark"] {
   --color-bg-main: #0A0A0A;
   --color-bg-section: #1A1A1A;
@@ -55,29 +48,6 @@
   --color-warning-bg: #2A2514;
 }
 
-@theme inline {
-  --color-primary: var(--color-primary);
-  --color-primary-hover: var(--color-primary-hover);
-  --color-primary-active: var(--color-primary-active);
-  --color-primary-text: var(--color-primary-text);
-  --color-success: var(--color-success);
-  --color-success-bg: var(--color-success-bg);
-  --color-success-text: var(--color-success-text);
-  --color-bg-main: var(--color-bg-main);
-  --color-bg-section: var(--color-bg-section);
-  --color-bg-card: var(--color-bg-card);
-  --color-border: var(--color-border);
-  --color-accent: var(--color-accent);
-  --color-accent-hover: var(--color-accent-hover);
-  --color-accent-bg: var(--color-accent-bg);
-  --color-ink: var(--color-text-primary);
-  --color-ink-muted: var(--color-text-secondary);
-  --color-error: var(--color-error);
-  --color-error-bg: var(--color-error-bg);
-  --color-warning: var(--color-warning);
-  --color-warning-bg: var(--color-warning-bg);
-}
-
 * {
   box-sizing: border-box;
 }
@@ -85,6 +55,7 @@
 body {
   background: var(--color-bg-main);
   color: var(--color-text-primary);
+  font-family: var(--font-cairo), 'Cairo', 'Segoe UI', sans-serif;
 }
 
 html {
@@ -97,12 +68,6 @@ html {
 
 .font-display {
   font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
-}
-
-body {
-  background: var(--color-bg-main);
-  color: var(--color-text-primary);
-  font-family: var(--font-cairo), 'Cairo', 'Segoe UI', sans-serif;
 }
 
 .card-hover {
@@ -157,10 +122,6 @@ button:active {
   }
 }
 
-/* ========================
-   MARK1: Enhanced Animations
-   ======================== */
-
 /* Skeleton Loader */
 @keyframes shimmer {
   0% {
@@ -178,12 +139,10 @@ button:active {
   border-radius: 8px;
 }
 
-/* Magnetic Button Effect */
 .magnetic-btn {
   transition: transform 0.2s ease;
 }
 
-/* Button Ripple Effect */
 .ripple {
   position: relative;
   overflow: hidden;
@@ -206,7 +165,6 @@ button:active {
   transition: transform 0s, opacity 0s;
 }
 
-/* Underline Animation for Nav Links */
 .nav-link {
   position: relative;
 }
@@ -227,7 +185,6 @@ button:active {
   left: 0;
 }
 
-/* Icon Bounce on Hover */
 .icon-bounce {
   transition: transform 0.2s ease;
 }
@@ -236,7 +193,6 @@ button:active {
   transform: scale(1.15) rotate(5deg);
 }
 
-/* Float Animation for Floating Elements */
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -250,7 +206,6 @@ button:active {
   animation: float 3s ease-in-out infinite;
 }
 
-/* Pulse Animation */
 @keyframes pulse-grow {
   0%, 100% {
     transform: scale(1);
@@ -266,7 +221,6 @@ button:active {
   animation: pulse-grow 2s ease-in-out infinite;
 }
 
-/* 3D Card Tilt Effect */
 .card-tilt {
   transform-style: preserve-3d;
   transition: transform 0.3s ease;
@@ -276,7 +230,6 @@ button:active {
   transform: perspective(1000px) rotateX(2deg) rotateY(-2deg) translateZ(10px);
 }
 
-/* Glow Effect */
 .glow-on-hover {
   box-shadow: 0 0 0 transparent;
   transition: box-shadow 0.3s ease;
@@ -286,7 +239,6 @@ button:active {
   box-shadow: 0 0 25px rgba(31, 58, 95, 0.25);
 }
 
-/* Success Shake */
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   25% { transform: translateX(-5px); }
@@ -297,7 +249,6 @@ button:active {
   animation: shake 0.3s ease-in-out;
 }
 
-/* Progress Bar Animation */
 @keyframes progressFill {
   from { width: 0; }
 }
@@ -306,7 +257,6 @@ button:active {
   animation: progressFill 1s ease-out forwards;
 }
 
-/* Text Typewriter Effect */
 @keyframes typewriter {
   from { width: 0; }
   to { width: 100%; }
@@ -318,14 +268,12 @@ button:active {
   animation: typewriter 2s steps(30) forwards;
 }
 
-/* Stagger Animation Delays */
 .stagger-1 { animation-delay: 0.1s; }
 .stagger-2 { animation-delay: 0.2s; }
 .stagger-3 { animation-delay: 0.3s; }
 .stagger-4 { animation-delay: 0.4s; }
 .stagger-5 { animation-delay: 0.5s; }
 
-/* Scroll-triggered fade in */
 .fade-in-section {
   opacity: 0;
   transform: translateY(20px);
@@ -337,7 +285,6 @@ button:active {
   transform: translateY(0);
 }
 
-/* Toast Notification Animation */
 @keyframes slideInRight {
   from {
     transform: translateX(100%);
@@ -353,7 +300,6 @@ button:active {
   animation: slideInRight 0.3s ease forwards;
 }
 
-/* Loading Spinner */
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
@@ -367,23 +313,16 @@ button:active {
   animation: spin 0.8s linear infinite;
 }
 
-/* Scale on Click */
 .scale-on-click:active {
   transform: scale(0.95);
 }
 
-/* Glass Effect */
 .glass {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* ========================
-   MARK1: Additional Animations
-   ======================== */
-
-/* Fade In */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -393,7 +332,6 @@ button:active {
   animation: fadeIn 0.3s ease forwards;
 }
 
-/* Slide Up */
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -409,7 +347,6 @@ button:active {
   animation: slideUp 0.4s ease forwards;
 }
 
-/* Slide Down */
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -425,7 +362,6 @@ button:active {
   animation: slideDown 0.4s ease forwards;
 }
 
-/* Scale In */
 @keyframes scaleIn {
   from {
     opacity: 0;
@@ -441,7 +377,6 @@ button:active {
   animation: scaleIn 0.3s ease forwards;
 }
 
-/* Bounce In */
 @keyframes bounceIn {
   0% {
     opacity: 0;
@@ -463,7 +398,6 @@ button:active {
   animation: bounceIn 0.6s ease forwards;
 }
 
-/* Pulse Ring */
 @keyframes pulseRing {
   0% {
     transform: scale(1);
@@ -488,13 +422,11 @@ button:active {
   animation: pulseRing 1.5s ease-out infinite;
 }
 
-/* Focus Ring */
 .focus-ring:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(31, 58, 95, 0.3);
 }
 
-/* Scrollbar Styling */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -514,7 +446,6 @@ button:active {
   background: var(--color-primary-hover);
 }
 
-/* Trust Badge Hover */
 .trust-badge {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -524,13 +455,11 @@ button:active {
   box-shadow: 0 8px 20px rgba(31, 58, 95, 0.15);
 }
 
-/* Counter Animation */
 @keyframes countUp {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* Service Card Overlay */
 .service-overlay {
   opacity: 0;
   backdrop-filter: blur(2px);
@@ -541,7 +470,6 @@ button:active {
   opacity: 1;
 }
 
-/* Input Focus Shine */
 .input-shine {
   position: relative;
   overflow: hidden;
@@ -570,7 +498,6 @@ button:active {
   100% { left: 200%; }
 }
 
-/* Mobile Menu Animation */
 .mobile-menu-enter {
   max-height: 0;
   opacity: 0;
@@ -582,7 +509,6 @@ button:active {
   transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
-/* Hover Lift Effect */
 .hover-lift {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -592,7 +518,6 @@ button:active {
   box-shadow: 0 12px 24px rgba(31, 58, 95, 0.12);
 }
 
-/* Border Glow */
 .border-glow {
   position: relative;
 }
@@ -612,17 +537,12 @@ button:active {
   opacity: 1;
 }
 
-/* Ripple Effect Animation */
 @keyframes ripple-effect {
   to {
     transform: scale(4);
     opacity: 0;
   }
 }
-
-/* ========================
-   SCROLL REVEAL ANIMATIONS
-   ======================== */
 
 .scroll-reveal {
   opacity: 0;
@@ -673,7 +593,6 @@ button:active {
   transform: scale(1);
 }
 
-/* Counter Animation */
 @keyframes countUp {
   from {
     opacity: 0;
@@ -689,7 +608,6 @@ button:active {
   animation: countUp 0.5s ease forwards;
 }
 
-/* Smooth Scroll Behavior */
 html {
   scroll-behavior: smooth;
 }
