@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   compress: true,
 
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -19,7 +20,6 @@ const nextConfig: NextConfig = {
   },
 
   trailingSlash: false,
-  cleanDistDir: true,
 };
 
 export default nextConfig;
