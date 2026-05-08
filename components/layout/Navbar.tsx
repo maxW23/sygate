@@ -63,11 +63,9 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group">
               <div className="relative">
-                <Image 
+                <img 
                   src="/logo.jpg" 
                   alt="SYGATE" 
-                  width={40} 
-                  height={40}
                   className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
