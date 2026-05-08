@@ -8,38 +8,40 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: 'var(--color-primary)',
-          hover: 'var(--color-primary-hover)',
-          active: 'var(--color-primary-active)',
-          text: 'var(--color-primary-text)',
+          DEFAULT: '#1F3A5F',
+          hover: '#162C47',
+          active: '#0F1F33',
         },
         success: {
-          DEFAULT: 'var(--color-success)',
-          bg: 'var(--color-success-bg)',
-          text: 'var(--color-success-text)',
+          DEFAULT: '#6B8E23',
+          light: '#E6F0D6',
         },
-        bg: {
-          main: 'var(--color-bg-main)',
-          section: 'var(--color-bg-section)',
-          card: 'var(--color-bg-card)',
-        },
-        border: 'var(--color-border)',
         accent: {
-          DEFAULT: 'var(--color-accent)',
-          hover: 'var(--color-accent-hover)',
-          bg: 'var(--color-accent-bg)',
+          DEFAULT: '#C96A3D',
+          hover: '#A9552F',
+          light: '#F3D2C2',
         },
-        ink: {
-          DEFAULT: 'var(--color-text-primary)',
-          muted: 'var(--color-text-secondary)',
+        beige: '#F5E9DA',
+        terracotta: '#C96A3F',
+        navy: '#0F1F33',
+      },
+      fontFamily: {
+        arabic: ['Cairo', 'sans-serif'],
+        display: ['Playfair Display', 'serif'],
+      },
+      animation: {
+        'fade-up': 'fadeUp 0.5s ease both',
+        'float': 'float 3s ease-in-out infinite',
+        'pulse-slow': 'pulse 2s ease-in-out infinite',
+      },
+      keyframes: {
+        fadeUp: {
+          from: { opacity: '0', transform: 'translateY(20px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
         },
-        error: {
-          DEFAULT: 'var(--color-error)',
-          bg: 'var(--color-error-bg)',
-        },
-        warning: {
-          DEFAULT: 'var(--color-warning)',
-          bg: 'var(--color-warning-bg)',
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-8px)' },
         },
       },
     },
