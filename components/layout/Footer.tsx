@@ -57,11 +57,9 @@ export default function Footer() {
           {/* Col 1: Logo & Tagline */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2">
-              <Image 
-                src="/logo.jpg" 
+              <img 
+                src="/icon.png" 
                 alt="SYGATE" 
-                width={40} 
-                height={40}
                 className="h-10 w-auto hover:scale-105 transition-transform"
               />
               <span className="font-arabic font-bold text-xl text-white">SYGATE</span>
