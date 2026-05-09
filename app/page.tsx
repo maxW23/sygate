@@ -40,8 +40,11 @@ export default function Home() {
             <p className="animate-fade-up font-arabic text-xl sm:text-2xl text-white/80 mb-4 max-w-3xl mx-auto leading-relaxed">
               البوابة الرقمية الأولى للمغترب السوري.
             </p>
-            <p className="animate-fade-up font-arabic text-lg text-white/70 mb-12 max-w-2xl mx-auto">
-              تخلص من القلق والوسطاء، واحجز خدماتك ورحلاتك لك ولأهلك في سورية عبر منصة آمنة تدفع فيها بعملتك ولا تسلم المال إلا بعد تأكيد وصول الخدمة.
+            <p className="animate-fade-up font-arabic text-xl sm:text-2xl text-white/80 mb-4 max-w-3xl mx-auto leading-relaxed">
+              لا وسطاء. لا قلق. لا دفع قبل التسليم.
+            </p>
+            <p className="animate-fade-up font-arabic text-lg text-white/70 mb-12 max-w-2xl mx-auto leading-relaxed">
+              احجز مواصلات وخدمات لأهلك في سوريا مباشرةً من مكانك — بعملتك الأوروبية — وادفع فقط بعد أن تتأكد بنفسك أن الخدمة وصلت.
             </p>
             
             {/* CTA Buttons */}
@@ -84,20 +87,29 @@ export default function Home() {
         <section className="py-24 bg-[#F2EFE9]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="animate-fade-up font-arabic font-bold text-4xl sm:text-5xl text-[#020B43] mb-8 leading-tight">
-              السفر والاهتمام بالأهل<br />لا يجب أن يكون عبئاً
+              نعرف كيف تشعر
             </h2>
-            <p className="animate-fade-up font-arabic text-xl text-[#6B6B6B] mb-12 leading-relaxed">
-              نحن نعرف شعورك تماماً. القلق المستمر عند حجز سيارة من المطار، الإحراج في طلب المساعدة من الأقارب، عدم وضوح الأسعار، والخوف من عدم وصول الدواء أو الخدمة لوالدتك في الوقت المناسب.
-            </p>
+            <div className="animate-fade-up font-arabic text-xl text-[#6B6B6B] mb-12 leading-loose space-y-4 text-right">
+              <p>القلق كل مرة تحجز سيارة من المطار ولا تعرف إن كانت ستصل</p>
+              <p>الإحراج حين تضطر لطلب المساعدة من قريب كل مرة</p>
+              <p>الخوف أن يتأخر الدواء أو لا يصل لأمك في الوقت المناسب</p>
+              <p className="font-bold text-[#020B43] mt-6">هذا بالضبط ما بنينا SYGATE لإنهائه.</p>
+            </div>
             
             {/* The Promise */}
             <div className="animate-fade-up bg-white rounded-3xl p-10 mt-16 shadow-xl shadow-[#020B43]/5">
               <div className="flex items-center justify-center gap-4 mb-6">
                 <span className="text-5xl">🎯</span>
-                <h3 className="font-arabic font-bold text-2xl text-[#020B43]">وعد سيجيت (The SYGATE Promise)</h3>
+                <h3 className="font-arabic font-bold text-2xl text-[#020B43]">السيطرة تعود إليك</h3>
               </div>
               <p className="font-arabic text-lg text-[#1A1A1A] leading-relaxed">
-                لقد بنينا SYGATE لنعيد لك السيطرة والاستقلالية. أنت تطلب الخدمة من مكانك، ونحن نضمن التنفيذ على الأرض بمعايير لا تقبل المساومة.
+                من أي مكان في العالم.
+              </p>
+              <p className="font-arabic text-lg text-[#1A1A1A] leading-relaxed mt-4">
+                تطلب الخدمة من أوروبا، ونحن ننفذها على الأرض في سوريا بدقة ومعايير واضحة.
+              </p>
+              <p className="font-arabic text-lg text-[#F26849] font-bold mt-4">
+                لا مفاجآت. لا تأخير. لا تسويف.
               </p>
             </div>
           </div>
@@ -121,19 +133,19 @@ export default function Home() {
                 <span className="text-white font-bold text-3xl">1</span>
               </div>
               <div>
-                <h3 className="font-arabic font-bold text-2xl text-[#1A1A1A] mb-4">اطلب وادفع بأمان</h3>
+                <h3 className="font-arabic font-bold text-2xl text-[#1A1A1A] mb-4">اطلب الخدمة</h3>
                 <ul className="font-arabic text-lg text-[#6B6B6B] space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-[#04D9B2]">✓</span>
-                    <span>اختر الخدمة (تاكسي مطار، توصيل دواء، إلخ)</span>
+                    <span>اختر الخدمة (تاكسي، توصيل أدوية، سلال غذائية، إلخ)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#04D9B2]">✓</span>
-                    <span>ادفع باليورو عبر بطاقتك الائتمانية</span>
+                    <span>ادفع باليورو من بطاقتك الأوروبية</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#04D9B2]">✓</span>
-                    <span>المبلغ يحتجز بأمان في أوروبا ولا يذهب للمورد</span>
+                    <span>المبلغ يحتجز بأمان — لا يذهب للمورد إلا بعد تأكيد وصول الخدمة</span>
                   </li>
                 </ul>
               </div>
@@ -145,19 +157,19 @@ export default function Home() {
                 <span className="text-white font-bold text-3xl">2</span>
               </div>
               <div>
-                <h3 className="font-arabic font-bold text-2xl text-[#1A1A1A] mb-4">التنفيذ الميداني</h3>
+                <h3 className="font-arabic font-bold text-2xl text-[#1A1A1A] mb-4">مالك محمي عندنا</h3>
                 <ul className="font-arabic text-lg text-[#6B6B6B] space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-[#04D9B2]">✓</span>
-                    <span>المورد المدقق من قبلنا في سورية يتوجه لتنفيذ خدمتك</span>
+                    <span>مزود موثوق ومدقق من فريقنا في سوريا</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#04D9B2]">✓</span>
-                    <span>في الوقت المحدد وبالمواصفات المتفق عليها</span>
+                    <span>شبكة موردين مغلقة — لا عشوائية</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#04D9B2]">✓</span>
-                    <span>شبكة موردين مغلقة وموثقة</span>
+                    <span>تنفيذ بالوقت والمواصفات المتفق عليها</span>
                   </li>
                 </ul>
               </div>
@@ -169,23 +181,19 @@ export default function Home() {
                 <span className="text-white font-bold text-3xl">3</span>
               </div>
               <div>
-                <h3 className="font-arabic font-bold text-2xl text-[#020B43] mb-4">تأكيد الوصول</h3>
+                <h3 className="font-arabic font-bold text-2xl text-[#020B43] mb-4">أنت من يعطي الإذن بالدفع</h3>
                 <ul className="font-arabic text-lg text-[#020B43] space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-[#04D9B2]">✓</span>
-                    <span>عند وصول السائق أو تسليم الغرض</span>
+                    <span>عند الوصول، يمسح السائق أو المزود رمز QR</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#04D9B2]">✓</span>
-                    <span>يتم مسح كود (QR) أو إدخال رمز سري (PIN)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#04D9B2]">✓</span>
-                    <span>من هاتفك أو هاتف أهلك</span>
+                    <span>من هاتفك أو هاتف أهلك — أنت تتحكم</span>
                   </li>
                   <li className="flex items-start gap-3 font-bold bg-[#04D9B2]/20 rounded-xl p-3 mt-4">
                     <span>🎯</span>
-                    <span>اللحظة الوحيدة التي يتم فيها تحرير الدفعة للمورد</span>
+                    <span>لا رمز = لا دفع. فقط عندها يُحرَّر المبلغ للمورد.</span>
                   </li>
                 </ul>
               </div>
