@@ -33,7 +33,7 @@ export default function Home() {
             <h1 className="animate-fade-up font-arabic font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
               زيارتك عائلتك..
               <br />
-              <span className="text-[#F26849]">بضمانتنا.</span>
+              <span className="text-[#04D9B2]">بضمانتنا.</span>
             </h1>
             
             {/* Subtitle */}
@@ -49,7 +49,7 @@ export default function Home() {
             
             {/* CTA Buttons */}
             <div className="animate-fade-up flex flex-col sm:flex-row gap-6 justify-center mb-16">
-              <button className="group relative px-10 py-5 bg-[#F26849] text-white font-arabic font-bold rounded-2xl hover:bg-[#E55A3A] transition-all duration-300 hover:scale-105 shadow-xl shadow-[#F26849]/30 overflow-hidden">
+              <button className="group relative px-10 py-5 bg-[#04D9B2] text-white font-arabic font-bold rounded-2xl hover:bg-[#04C4A0] transition-all duration-300 hover:scale-105 shadow-xl shadow-[#04D9B2]/30 overflow-hidden">
                 <span className="relative z-10">احجز راحتك الآن</span>
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-white/30 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
               </button>
@@ -99,7 +99,6 @@ export default function Home() {
             {/* The Promise */}
             <div className="animate-fade-up bg-white rounded-3xl p-10 mt-16 shadow-xl shadow-[#020B43]/5">
               <div className="flex items-center justify-center gap-4 mb-6">
-                <span className="text-5xl">🎯</span>
                 <h3 className="font-arabic font-bold text-2xl text-[#020B43]">السيطرة تعود إليك</h3>
               </div>
               <p className="font-arabic text-lg text-[#1A1A1A] leading-relaxed">
@@ -192,7 +191,6 @@ export default function Home() {
                     <span>من هاتفك أو هاتف أهلك — أنت تتحكم</span>
                   </li>
                   <li className="flex items-start gap-3 font-bold bg-[#04D9B2]/20 rounded-xl p-3 mt-4">
-                    <span>🎯</span>
                     <span>لا رمز = لا دفع. فقط عندها يُحرَّر المبلغ للمورد.</span>
                   </li>
                 </ul>
@@ -334,7 +332,7 @@ export default function Home() {
                   placeholder="أدخل بريدك الإلكتروني"
                   className="px-8 py-5 rounded-2xl bg-white text-[#1A1A1A] font-arabic text-lg w-full sm:w-96 focus:outline-none focus:ring-4 focus:ring-[#F26849]/50"
                 />
-                <button className="px-10 py-5 bg-[#F26849] text-white font-arabic font-bold rounded-2xl hover:bg-[#E55A3A] transition-all duration-300 hover:scale-105 shadow-lg whitespace-nowrap">
+                <button className="px-10 py-5 bg-[#04D9B2] text-white font-arabic font-bold rounded-2xl hover:bg-[#04C4A0] transition-all duration-300 hover:scale-105 shadow-lg whitespace-nowrap">
                   احجز مكانك الآن
                 </button>
               </div>
